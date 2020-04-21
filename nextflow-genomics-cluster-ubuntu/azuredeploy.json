@@ -30,14 +30,14 @@
     },
     "vmNodeSku": {
       "type": "string",
-      "defaultValue": "Standard_F8s_v2",
+      "defaultValue": "Standard_ds1_v2",
       "metadata": {
         "description": "Size of VMs in the VM Scale Set."
       }
     },
     "vmMasterSku": {
       "type": "string",
-      "defaultValue": "Standard_F16s_v2",
+      "defaultValue": "Standard_ds2_v2",
       "metadata": {
         "description": "Size of the master node."
       }
@@ -146,7 +146,7 @@
       "metadata": {
         "description": "*Advanced* This is best left as default unless you are an advanced user. The base URI where artifacts required by this template are located."
       },
-      "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master"
+      "defaultValue": "https://jax.file.core.windows.net"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
@@ -160,14 +160,14 @@
       "metadata": {
         "description": "*Advanced* This should be left as default unless you are an advanced user. The folder in the artifacts location were shared scripts are stored."
       },
-      "defaultValue": "/shared_scripts/ubuntu"
+      "defaultValue": "/sripts/vmdisk/"
     },
     "_artifactsNextflowFolder": {
       "type": "string",
       "metadata": {
         "description": "*Advanced* This should be left as default unless you are an advanced user. The folder in the artifacts location were nextflow scripts are stored."
       },
-      "defaultValue": "/nextflow-genomics-cluster-ubuntu/scripts"
+      "defaultValue": "/sripts/init/"
     },
     "authenticationType": {
       "type": "string",
